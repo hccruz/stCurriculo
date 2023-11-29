@@ -64,4 +64,59 @@ with col2:
         file_name=arquivo_pdf.name,
         mime="application/octet-stream"
     )
+    st.write(":telephone_receiver:", TELEFONE)
     st.write("✉️", EMAIL)
+
+# Midias Sociais
+
+st.write("#")
+colunas = st.columns(len(MIDIA_SOCIAL))
+
+for indice, (plataforma, link) in enumerate(MIDIA_SOCIAL.items()):
+    colunas[indice].write(f"[{plataforma}]({link})")
+
+# Experiências
+
+st.write("#")
+st.markdown("## Experiências Profissionais")
+st.markdown("#### 1 ano como Analista de Dados")
+st.markdown("""
+            Programação de automatização de escritório com linguagem VBA e
+            *Python*. Criação de *Dashboards* e Relatórios.
+            """)
+st.markdown("#### 20 anos como Instrutor de Formação Professional")
+st.markdown("""Ministrar aulas para o curso Técnico em Plástico, na área de
+            informática e projetos. Ministrar aulas para o curso Tecnólogo em
+            Polímeros, na área de informática. Elaborar cursos na área de
+            informática da escola: Programação, editores de texto, planilha
+            eletrônica e apresentação digital.""")
+
+# Competências
+
+st.write("#")
+st.markdown("## Competências")
+st.markdown("""
+            * Análise de Dados
+            * Conhecimentos em linguagens de programação R e Python
+            * Exploração de dados
+            * Visualização de dados em Dashboards
+            * Conhecimentos em métodos estatísticos
+            * Trabalho em equipe
+            * Habilidades em soft skills
+            """)
+
+# Histórico de Trabalho
+
+st.write("#")
+st.markdown("## Histórico de Trabalho")
+st.markdown("""
+           ##### - **Instrutor de Formação Professional**\n
+           **Escola SENAI Mario Amato** - São Bernardo do Campo\n
+           08/2001 - 02/2022
+           """)
+st.markdown("""
+           ##### - **Analista de Dados**\n
+           **X-Safe Comercio de Produtos Médicos Hospitalares LTDA – EPP** -
+           São Caetano do Sul\n
+           05/2023 - atual
+           """)
